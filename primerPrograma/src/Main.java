@@ -5,9 +5,21 @@ public class Main {
 
         int fechaDeLanzamiento = 1999;
         boolean incluidoEnElPlan = true;
-        double notaDeLaPelicula = 8.2;
+        double notaDeLaPelicula = 9.2;
 
-        double media = (8.2 + 6.0 + 9.0) / 3;
+        double media = (9.2 + 8.0 + 9.0) / 3;
         System.out.println(media);
+
+        //Trabajando con textos
+
+        String sinopsis = """
+                Matrix es una paradoja
+                la mejor pelicula del fin del milenio
+                Fue lanzada en:
+                """ + fechaDeLanzamiento;
+        System.out.println(sinopsis);
+
+        int clasificacion = (int) ((media)  / 2);
+        System.out.println(clasificacion);
     }
 }
